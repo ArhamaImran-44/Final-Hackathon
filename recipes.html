@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RecipeShare - Recipes</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body shadow-sm">
+
+        <div class="container-fluid">
+
+            <!-- Logo -->
+
+            <a class="navbar-brand d-flex align-items-center fw-bold"
+                href="./index.html">
+
+                <span class="fs-4">🍳</span>
+
+                <span class="ms-2">
+                    Recipe<span class="text-warning">Share</span>
+                </span>
+
+            </a>
+
+
+            <!-- Mobile Button -->
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- Navbar -->
+
+            <div class="collapse navbar-collapse"
+                id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="./index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                            href="./recipes.html">
+                            Recipes
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="./dashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="./my-recipes.html">
+                            My Recipes
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Login / Signup -->
+
+                <div class="text-center" id="loginSignupBtn">
+
+                    <a href="./login.html"
+                        class="text-black bg-light p-2 rounded-2 text-decoration-none">
+
+                        Login
+
+                    </a>
+
+                    <a href="./signup.html"
+                        class="text-black bg-warning p-2 rounded-2 text-decoration-none">
+
+                        Sign Up
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Recipes Section -->
+
+    <div class="container py-5">
+
+        <!-- Heading -->
+
+        <div class="text-center mb-4">
+
+            <h1 class="fw-bold">
+                Explore Recipes
+            </h1>
+
+            <p class="text-secondary">
+                Discover delicious recipes from different categories.
+            </p>
+
+        </div>
+
+
+        <!-- Search and Filter -->
+
+        <div class="row g-3 mb-5">
+
+            <!-- Search -->
+
+            <div class="col-md-8">
+
+                <input type="text"
+                    class="form-control"
+                    placeholder="Search recipe by title">
+
+            </div>
+
+
+            <!-- Category -->
+
+            <div class="col-md-4">
+
+                <select class="form-select">
+
+                    <option selected>
+                        All Categories
+                    </option>
+
+                    <option>
+                        Pakistani
+                    </option>
+
+                    <option>
+                        Chinese
+                    </option>
+
+                    <option>
+                        Desserts
+                    </option>
+
+                    <option>
+                        Fast Food
+                    </option>
+
+                    <option>
+                        Healthy
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- Recipe Cards -->
+
+        <div class="row g-4">
+
+
+            <!-- Recipe Card 1 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card shadow-sm border-0 h-100">
+
+                    <img src="./Images/biyanii.jpeg"
+                        class="card-img-top"
+                        alt="Recipe Image">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title fw-bold">
+                            Chicken Biryani
+                        </h5>
+
+                        <p class="card-text text-secondary">
+                            A delicious and spicy Pakistani rice dish.
+                        </p>
+
+                        <p class="small text-secondary">
+                            Category: Pakistani
+                        </p>
+
+                        <a href="./recipe-details.html"
+                            class="btn btn-warning">
+
+                            View Recipe
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Recipe Card 2 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card shadow-sm border-0 h-100">
+
+                    <img src="./Images/paasta.webp"
+                        class="card-img-top"
+                        alt="Recipe Image">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title fw-bold">
+                            Pasta
+                        </h5>
+
+                        <p class="card-text text-secondary">
+                            A simple and tasty Italian pasta recipe.
+                        </p>
+
+                        <p class="small text-secondary">
+                            Category: Italian
+                        </p>
+
+                        <a href="./recipe-details.html"
+                            class="btn btn-warning">
+
+                            View Recipe
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Recipe Card 3 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card shadow-sm border-0 h-100">
+
+                    <img src="./Images/cake.jfif"
+                        class="card-img-top"
+                        alt="Recipe Image">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title fw-bold">
+                            Chocolate Cake
+                        </h5>
+
+                        <p class="card-text text-secondary">
+                            A soft and delicious chocolate dessert.
+                        </p>
+
+                        <p class="small text-secondary">
+                            Category: Desserts
+                        </p>
+
+                        <a href="./recipe-details.html"
+                            class="btn btn-warning">
+
+                            View Recipe
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

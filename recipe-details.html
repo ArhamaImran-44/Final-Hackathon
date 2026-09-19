@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RecipeShare - Recipe Details</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body shadow-sm">
+
+        <div class="container-fluid">
+
+            <!-- Logo -->
+
+            <a class="navbar-brand d-flex align-items-center fw-bold"
+                href="./index.html">
+
+                <span class="fs-4">🍳</span>
+
+                <span class="ms-2">
+                    Recipe<span class="text-warning">Share</span>
+                </span>
+
+            </a>
+
+
+            <!-- Mobile Button -->
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- Navbar Links -->
+
+            <div class="collapse navbar-collapse"
+                id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="./index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                            href="./recipes.html">
+                            Recipes
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="./dashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="./my-recipes.html">
+                            My Recipes
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Login / Signup -->
+
+                <div class="text-center" id="loginSignupBtn">
+
+                    <a href="./login.html"
+                        class="text-black bg-light p-2 rounded-2 text-decoration-none">
+
+                        Login
+
+                    </a>
+
+                    <a href="./signup.html"
+                        class="text-black bg-warning p-2 rounded-2 text-decoration-none">
+
+                        Sign Up
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Recipe Details -->
+
+    <div class="container py-5">
+
+        <div class="row g-4">
+
+
+            <!-- Recipe Image -->
+
+            <div class="col-md-6">
+
+                <img src="./Images/biyani.webp"
+                    class="img-fluid rounded shadow-sm w-100"
+                    alt="Chicken Biryani">
+
+            </div>
+
+
+            <!-- Recipe Information -->
+
+            <div class="col-md-6">
+
+                <span class="badge bg-warning text-dark mb-2">
+                    Pakistani
+                </span>
+
+                <h1 class="fw-bold">
+                    Chicken Biryani
+                </h1>
+
+                <p class="text-secondary">
+                    A delicious and spicy Pakistani rice dish made
+                    with aromatic spices and tender chicken.
+                </p>
+
+
+                <!-- Recipe Information -->
+
+                <div class="row mt-4">
+
+                    <div class="col-6 mb-3">
+
+                        <strong>
+                            👤 Author
+                        </strong>
+
+                        <p class="text-secondary mb-0">
+                            RecipeShare User
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-6 mb-3">
+
+                        <strong>
+                            📅 Date
+                        </strong>
+
+                        <p class="text-secondary mb-0">
+                            19 September 2026
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-6">
+
+                        <strong>
+                            ⏱ Cooking Time
+                        </strong>
+
+                        <p class="text-secondary mb-0">
+                            60 Minutes
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-6">
+
+                        <strong>
+                            🍽 Category
+                        </strong>
+
+                        <p class="text-secondary mb-0">
+                            Pakistani
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Buttons -->
+
+                <div class="mt-4">
+
+                    <button class="btn btn-warning me-2">
+                        Edit Recipe
+                    </button>
+
+                    <button class="btn btn-danger">
+                        Delete Recipe
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Ingredients -->
+
+        <div class="row mt-5">
+
+            <div class="col-md-6">
+
+                <h3 class="fw-bold mb-3">
+                    Ingredients
+                </h3>
+
+                <ul class="list-group">
+
+                    <li class="list-group-item">
+                        500g Chicken
+                    </li>
+
+                    <li class="list-group-item">
+                        2 Cups Rice
+                    </li>
+
+                    <li class="list-group-item">
+                        2 Onions
+                    </li>
+
+                    <li class="list-group-item">
+                        2 Tomatoes
+                    </li>
+
+                    <li class="list-group-item">
+                        Biryani Masala
+                    </li>
+
+                    <li class="list-group-item">
+                        Salt
+                    </li>
+
+                    <li class="list-group-item">
+                        Cooking Oil
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Instructions -->
+
+            <div class="col-md-6 mt-4 mt-md-0">
+
+                <h3 class="fw-bold mb-3">
+                    Instructions
+                </h3>
+
+                <ol class="list-group list-group-numbered">
+
+                    <li class="list-group-item">
+                        Wash and soak the rice.
+                    </li>
+
+                    <li class="list-group-item">
+                        Cook the chicken with spices.
+                    </li>
+
+                    <li class="list-group-item">
+                        Boil the rice separately.
+                    </li>
+
+                    <li class="list-group-item">
+                        Layer the rice and chicken.
+                    </li>
+
+                    <li class="list-group-item">
+                        Cook on low heat for 15 minutes.
+                    </li>
+
+                    <li class="list-group-item">
+                        Serve hot.
+                    </li>
+
+                </ol>
+
+            </div>
+
+        </div>
+
+
+        <!-- Back Button -->
+
+        <div class="mt-5">
+
+            <a href="./recipes.html"
+                class="btn btn-outline-warning">
+
+                ← Back to Recipes
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
