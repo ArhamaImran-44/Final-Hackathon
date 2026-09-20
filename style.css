@@ -1,0 +1,42 @@
+/* Recipe Cards Hover */
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18) !important;
+}
+
+
+/* Recipe Card Image */
+
+.card img {
+    transition: transform 0.3s ease !important;
+}
+
+.card:hover img {
+    transform: scale(1.05) !important;
+}
+
+
+/* Buttons */
+
+.btn {
+    transition: all 0.3s ease !important;
+}
+
+.btn:hover {
+    transform: translateY(-3px) !important;
+}
+
+
+/* Explore Recipes Button */
+
+.btn-warning:hover {
+    background-color: #d99400 !important;
+    border-color: #d99400 !important;
+    color: white !important;
+    box-shadow: 0 6px 15px rgba(217, 148, 0, 0.35) !important;
+}
