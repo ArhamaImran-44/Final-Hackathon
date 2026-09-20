@@ -1,43 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>RecipeShare - Login</title>
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet">
-
+        <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <!-- Navbar -->
-
     <nav class="navbar navbar-expand-lg bg-body shadow-sm">
-
         <div class="container-fluid">
-
             <!-- Logo -->
-
             <a class="navbar-brand d-flex align-items-center fw-bold"
                 href="./index.html">
-
                 <span class="fs-4">🍳</span>
-
                 <span class="ms-2">
                     Recipe<span class="text-warning">Share</span>
                 </span>
-
             </a>
 
 
-            <!-- Mobile Button -->
+            <!-- Button -->
 
             <button class="navbar-toggler"
                 type="button"
@@ -46,19 +31,14 @@
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation">
-
                 <span class="navbar-toggler-icon"></span>
-
             </button>
 
-
-            <!-- Navbar Content -->
+            <!--  Content -->
 
             <div class="collapse navbar-collapse"
                 id="navbarSupportedContent">
-
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-
                     <li class="nav-item">
                         <a class="nav-link"
                             href="./index.html">
@@ -137,63 +117,43 @@
                             Login to your RecipeShare account
                         </p>
 
+                       <form id="loginForm">
 
-                        <!-- Login Form -->
+    <!-- Email -->
+    <div class="mb-3">
+        <label for="email" class="form-label">
+            Email
+        </label>
 
-                        <form>
-
-                            <!-- Email -->
-
-                            <div class="mb-3">
-
-                                <label for="email"
-                                    class="form-label">
-
-                                    Email
-
-                                </label>
-
-                                <input type="email"
-                                    id="email"
-                                    name="email"
-                                    class="form-control"
-                                    placeholder="Enter your email">
-
-                            </div>
+        <input type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your email">
+    </div>
 
 
-                            <!-- Password -->
+    <!-- Password -->
+    <div class="mb-3">
+        <label for="password" class="form-label">
+            Password
+        </label>
 
-                            <div class="mb-3">
-
-                                <label for="password"
-                                    class="form-label">
-
-                                    Password
-
-                                </label>
-
-                                <input type="password"
-                                    id="password"
-                                    name="password"
-                                    class="form-control"
-                                    placeholder="Enter your password">
-
-                            </div>
+        <input type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Enter your password">
+    </div>
 
 
-                            <!-- Login Button -->
+    <!-- Login Button -->
+    <button type="submit"
+        class="btn btn-warning w-100">
+        Login
+    </button>
 
-                            <button type="submit"
-                                class="btn btn-warning w-100">
-
-                                Login
-
-                            </button>
-
-                        </form>
-
-
+</form>
                         <!-- Signup Link -->
 
                         <p class="text-center mt-3 mb-0">
@@ -222,9 +182,9 @@
 
     <!-- Bootstrap JS -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-    </script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./app.js"></script>
 </body>
 
 </html>
