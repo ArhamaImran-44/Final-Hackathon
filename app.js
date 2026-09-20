@@ -216,9 +216,7 @@ if (loginForm) {
 }
 
 
-// ==================================================
 // =============== CREATE RECIPE ====================
-// ==================================================
 
 const recipeForm =
     document.querySelector("#recipeForm");
@@ -351,8 +349,8 @@ if (recipeForm) {
                 data: categoryData,
                 error: categoryError
             } = await client
-                .from("category")
-                .select("id")
+                .from("categories")
+                .select("category_id")
                 .eq(
                     "name",
                     recipeCategory.value
